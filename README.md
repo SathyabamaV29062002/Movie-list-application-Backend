@@ -25,7 +25,7 @@ I am Sathyabama V currently pursuing B Tech Information Technology<br>I’m curr
 
 
 
-# Movie List Application Database Schema
+# Movie List Application Database Schema PRESIDIO ROUND 2
 
 ## Introduction
 
@@ -86,6 +86,25 @@ Filter movies based on various criteria, such as Name, Director, Release Year, L
 
 8. Get the Number of Movies in a Specified Language (Bonus Task)
 Implement a feature to retrieve the number of movies in a specified language.
+
+
+MOVIE LIST APPLICATION HOME PAGE
+![image](https://github.com/SathyabamaV29062002/Movie-list-application-Backend/assets/121182083/ed96899f-e2c9-4430-8009-66ed8ba52930)
+
+CAN VIEW MOVIES
+![image](https://github.com/SathyabamaV29062002/Movie-list-application-Backend/assets/121182083/fc1e355d-e2ae-4dd7-b2af-bf57df5f375c)
+
+CAN ADD MOVIES AND ASLO UPDATE
+![image](https://github.com/SathyabamaV29062002/Movie-list-application-Backend/assets/121182083/e00aea59-944b-4611-ae31-428ceab4819a)
+
+CAN DELETE MOVIES
+![image](https://github.com/SathyabamaV29062002/Movie-list-application-Backend/assets/121182083/ca19b218-2061-44b1-876b-307325ca19dd)
+
+MOVIE REPORT
+![image](https://github.com/SathyabamaV29062002/Movie-list-application-Backend/assets/121182083/8dd4b862-2816-4487-a6b1-af8308c621d6)
+
+
+
 
 Conclusion
 This README.md file serves as a reference for the database schema, file structure, and operations supported by the Console-Based Movie List Application.
