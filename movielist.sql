@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Nov 19, 2023 at 08:54 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Host: 127.0.0.1:3306
+-- Generation Time: Nov 24, 2023 at 08:40 AM
+-- Server version: 8.0.31
+-- PHP Version: 8.0.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -27,46 +27,32 @@ SET time_zone = "+00:00";
 -- Table structure for table `movie`
 --
 
-CREATE TABLE `movie` (
-  `ID` int(100) NOT NULL,
-  `M_name` varchar(50) NOT NULL,
-  `Director` varchar(50) NOT NULL,
-  `Actor` varchar(100) NOT NULL,
-  `M_img` varchar(100) NOT NULL,
-  `Music` varchar(50) NOT NULL,
-  `Rel_yr` varchar(20) NOT NULL,
-  `Lang` varchar(20) NOT NULL,
+DROP TABLE IF EXISTS `movie`;
+CREATE TABLE IF NOT EXISTS `movie` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `M_name` varchar(100) NOT NULL,
+  `Director` varchar(60) NOT NULL,
+  `Actor` varchar(60) NOT NULL,
+  `M_image` varchar(60) NOT NULL,
+  `Music` varchar(70) NOT NULL,
+  `Rel_yr` varchar(28) NOT NULL,
+  `Lang` varchar(50) NOT NULL,
   `gener` varchar(20) NOT NULL,
-  `Rating` float NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `Rating` float NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `movie`
 --
 
-INSERT INTO `movie` (`ID`, `M_name`, `Director`, `Actor`, `M_img`, `Music`, `Rel_yr`, `Lang`, `gener`, `Rating`) VALUES
-(19, 'Vikramvxcvdfgdfgdfgdfgfgdfgdfgfgdfgdfgdfgdfgdfgdfg', 'Logesh', 'Kamal, VJS', '', 'Anirudh', '2022', 'Tamil', 'Action', 4.5),
-(22, 'ss', 'dsfsd', 'dsfsdfsd dfvfvfdv dfvdfvf', '', 'dfvfdv', '2022', 'Malayalam', 'Fantasy', 3);
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `movie`
---
-ALTER TABLE `movie`
-  ADD PRIMARY KEY (`ID`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `movie`
---
-ALTER TABLE `movie`
-  MODIFY `ID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+INSERT INTO `movie` (`ID`, `M_name`, `Director`, `Actor`, `M_image`, `Music`, `Rel_yr`, `Lang`, `gener`, `Rating`) VALUES
+(2, 'Mouna ragam', 'Maniratnam', 'karthi revathi', '', 'illayaraja', '1986', 'Tamil', 'Romance', 10),
+(3, 'Sathya', 'Maniratnam', 'sfdsf', '', 'sdfsdf', '1986', 'Tamil', 'Romance', 4),
+(9, 'Mouna ragam', 'Maniratnam', 'trfeqa', '', 't', '123', 'Hindi', 'Fantasy', 4),
+(6, 'dvdf', 'fdg', 'dfgdg', '', 'dfgdfg', 'dfgd', 'Hindi', 'Romance', 4),
+(8, 'dfdsf', 'fdg', 'asdfg', '', 'ghhvg', '2002', 'Malayalam', 'Thriller', 5),
+(10, 'Mouna ragam', 'Maniratnam', 'afds', '', 'dfgdf', '123', 'Malayalam', 'Horror', 4.5);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
